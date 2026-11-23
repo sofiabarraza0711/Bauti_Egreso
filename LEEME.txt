@@ -1,0 +1,35 @@
+COMO COMPARTIRLA POR WHATSAPP
+============================
+
+WhatsApp NO muestra una página HTML interactiva como vista previa: muestra una TARJETA
+con una imagen (la del sobre cerrado) + título + descripción. Al tocar la tarjeta se
+abre la invitación completa en el navegador.
+
+OPCION A (recomendada, la mas rapida): Netlify Drop
+---------------------------------------------------
+1. Entrá a https://app.netlify.com/drop
+2. Arrastrá la carpeta "Invitacion-para-compartir" completa.
+3. Te dan una URL tipo https://xxxx-xxxx.netlify.app/
+4. Reemplazá en index.html las dos apariciones de
+   https://TU-USUARIO.github.io/TU-REPO/
+   por tu URL de Netlify (sin barra final), guardás y volvé a arrastrar la carpeta.
+5. Copiá la URL y pegala en el chat de WhatsApp. Ahi aparece la vista previa del sobre.
+
+OPCION B: GitHub Pages (gratis, si querés tenerlo en un repo)
+------------------------------------------------------------
+1. Creá un repo nuevo en https://github.com/new (puede ser privado? NO: debe ser publico).
+2. Subí a la raiz del repo los archivos: index.html, sobre-preview.png, sobre.webp.
+3. En el repo: Settings > Pages > Source: "Deploy from a branch" > main / root > Save.
+4. Tu URL sera https://TU-USUARIO.github.io/NOMBRE-DEL-REPO/
+5. Reemplazá en index.html las dos apariciones de
+   https://TU-USUARIO.github.io/TU-REPO/
+   por tu URL real, hacé commit, y esperá 1-2 minutos.
+6. Pegá la URL en WhatsApp.
+
+NOTAS
+-----
+- El archivo debe llamarse index.html para que se abra automaticamente.
+- Si la vista previa no actualiza, agregale ?v=2 al final de la URL al compartir.
+- Para forzar el refresco del cache: https://developers.facebook.com/tools/debug/ (opcional).
+- La musica se activa recien cuando la persona toca el sello (Windows/Android lo permiten;
+  en iPhone puede requerir tocar el boton de musica).
